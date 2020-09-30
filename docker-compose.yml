@@ -3,6 +3,7 @@ services:
   app:
     build: .
     container_name: app
+    restart: always
     volumes:
       - ./app:/app
     tty: true
